@@ -8,7 +8,7 @@
         tools:context="mkalten.reactivision.MainActivity">
 
     <ImageView
-            android:id="@+id/result"
+            android:id="@+id/preview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -17,13 +17,39 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-            android:id="@+id/sample_text"
+            android:id="@+id/resolution"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@android:color/white"
+            android:background="#88000000"/>
+
+    <TextView
+            android:id="@+id/fps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:textColor="@android:color/white"
             android:background="#88000000"/>
+
+    <CheckBox
+            android:id="@+id/toggle_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/preview"
+            android:checked="true"/>
+
+    <Button
+            android:id="@+id/ip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/ip" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

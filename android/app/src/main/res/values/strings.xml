@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Reactivision</string>
+    <string name="preview">Preview</string>
+    <string name="ip">IP</string>
 </resources>

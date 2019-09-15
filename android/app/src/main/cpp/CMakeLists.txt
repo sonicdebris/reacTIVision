@@ -49,5 +49,7 @@ add_library(reactivision SHARED
 target_include_directories(reactivision PUBLIC ${rv_src})
 target_link_libraries(reactivision portvideo tinyxml tuio osc fidtrack android)
 
+
 add_library(reactivision-android SHARED AndroidVisionEngine.cpp LogcatInterface.cpp)
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 target_link_libraries(reactivision-android log reactivision)
