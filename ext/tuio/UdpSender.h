@@ -22,7 +22,12 @@
 #include "OscSender.h"
 #include "ip/UdpSocket.h"
 
+#ifdef ANDROID
+#define IP_MTU_SIZE 4096
+#else
 #define IP_MTU_SIZE 1500
+#endif
+
 #define MAX_UDP_SIZE 4096
 #define MIN_UDP_SIZE 576
 

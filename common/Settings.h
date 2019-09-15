@@ -56,4 +56,7 @@ struct application_settings {
 	int display_mode;
 };
 
+void readSettings(application_settings *config);
+void writeSettings(application_settings *config);
+
 #endif

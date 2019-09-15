@@ -37,7 +37,7 @@
 #include <sys/stat.h>
 #include <time.h>
 
-#include "Main.h"
+#include "Settings.h"
 #include "CameraTool.h"
 #include "RingBuffer.h"
 #include "UserInterface.h"

@@ -19,7 +19,7 @@
 #ifndef FIDTRACKFINDER
 #define FIDTRACKFINDER
 
-#include "Main.h"
+#include "Settings.h"
 #include "FiducialFinder.h"
 #include "FiducialObject.h"
 #include "BlobObject.h"

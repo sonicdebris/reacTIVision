@@ -43,7 +43,10 @@
 #ifndef NDEBUG
 #include "FileCamera.h"
 #include "FolderCamera.h"
+#else
+#include "CameraEngine.h"
 #endif
+
 
 #include <iostream>
 #include <vector>
